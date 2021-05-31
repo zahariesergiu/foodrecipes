@@ -1,1 +1,7 @@
+wheel
 pandas
+sklearn
+tensorflow
+numpy~=1.19.2
+nltk
+flask
