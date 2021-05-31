@@ -23,9 +23,9 @@ clean_recipes = pd.read_csv(DATA_PATH + 'clean_recipes.csv', delimiter=';').fill
 data = {a[0]:a[1] for a in clean_recipes[["RecipeID", "Directions"]][:1].values.tolist()}
 data_web_app = json.dumps(data)
 
-json_response = requests.post(FLASK_TF_SERVING_URL, data=data_web_app, headers=headers)
-print(json_response)
-print(json_response.text)
+# json_response = requests.post(FLASK_TF_SERVING_URL, data=data_web_app, headers=headers)
+# print(json_response)
+# print(json_response.text)
 
 json_response = requests.post(FLASK_URL, data=data_web_app, headers=headers)
 print(json_response)
