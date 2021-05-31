@@ -1,0 +1,9 @@
+requests
+flask
+nltk
+numpy
+tensorflow
+sklearn
+matplotlib
+pandas
+tensorflow_addons
